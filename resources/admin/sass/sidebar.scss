@@ -1,0 +1,270 @@
+.sidebar {
+    display       : flex;
+    flex-direction: column;
+    position      : relative;
+    z-index       : 100;
+
+    .sidebar-wrapper {
+        height: 100vh;
+
+        .logo {
+            width           : 100%;
+            // height       : 100px;
+            background      : $header-sidebar;
+            padding         : 15px;
+            box-sizing      : border-box;
+            display         : grid;
+            place-items     : center;
+            color           : #fff;
+            position        : relative;
+            margin-bottom   : 10px;
+
+            img {
+                width : 200px;
+                height: 100%;
+                color : #fff;
+            }
+
+            .text {
+                width         : fit-content;
+                font-size     : 10px;
+                color         : #fff;
+                text-transform: uppercase;
+                text-align    : center;
+                font-family   : 'Poppins', sans-serif, 'Moul', cursive;
+            }
+
+            .text-km {
+                font-size: 11px;
+            }
+
+            .text-en {
+                font-size: 19px;
+            }
+        }
+
+        .menu-list {
+            height        : calc(100% - 20%);
+            display       : flex;
+            flex-direction: column;
+            overflow-y    : auto;
+            overflow-x    : hidden;
+            gap           : 5px;
+
+            .menu-item {
+                margin-left              : 15px;
+                display                  : flex;
+                flex-direction           : column;
+                align-items              : center;
+                color                    : $menu;
+                height                   : fit-content;
+                cursor                   : pointer;
+                transition               : .2s;
+                border                   : 2px solid rgba(0, 0, 0, 0);
+                border-top-left-radius   : 40px;
+                border-bottom-left-radius: 40px;
+                box-sizing               : border-box;
+
+                &:hover:not(.active) {
+                    border-color: rgba($color: $menu, $alpha:.2);
+
+                    span {
+                        color: $menu;
+                    }
+                }
+
+                &.active {
+                    // box-shadow  : rgba($color:$menu-active, $alpha:0.35) 0px 5px 15px;
+                    color       : $menu-text-active;
+                    background  : $menu-active;
+                    border-color: $menu-active;
+
+                    .menu-text {
+
+                        >span {
+                            color: $menu-text-active;
+                        }
+                    }
+                }
+
+                .menu-text {
+                    padding      : 0 20px 0px 15px;
+                    width        : 100%;
+                    min-height   : 40px;
+                    display      : flex;
+                    align-items  : center;
+                    box-sizing   : border-box;
+                    position     : relative;
+                    border-radius: 8px;
+
+                    svg {
+                        margin-right: 15px;
+                        height      : auto;
+                        width       : 20px;
+                        line-height : 0;
+                        transition  : .2s;
+                    }
+
+                    p {
+                        position : absolute;
+                        top      : 50%;
+                        right    : 10px;
+                        transform: translateY(-50%);
+                        margin   : 0;
+                        width    : 20px;
+
+                        &.show {
+                            svg {
+                                transform : rotate(180deg);
+                                transition: .3s;
+                            }
+                        }
+                    }
+
+                    span {
+                        font-size     : 15px;
+                        color         : rgba($color: $menu, $alpha:.8);
+                        text-transform: capitalize;
+                        transition    : .2s;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    .badge {
+                        position     : absolute;
+                        right        : 5px;
+                        border-radius: $border-radius;
+                    }
+                }
+            }
+
+            .sub-menu {
+                margin-left      : 25px;
+                margin-bottom    : 5px;
+                display          : flex;
+                flex-direction   : column;
+                color            : $menu;
+                height           : -webkit-fit-content;
+                height           : -moz-fit-content;
+                height           : fit-content;
+                transition       : 0.2s;
+                // background    : rgba($color: $dark, $alpha:.05);
+                border-radius    : $border-radius;
+                padding          : 5px 0;
+
+                .sub-item {
+                    font-size  : 14px;
+                    padding    : 8px 25px;
+                    cursor     : pointer;
+                    opacity    : 0.8;
+                    transition : 0.2s;
+                    display    : flex;
+                    align-items: center;
+
+                    svg {
+                        margin-right: 15px;
+                        height      : auto;
+                        width       : 10px;
+                        line-height : 0;
+                    }
+
+                    &:hover {
+                        transition: 0.2s;
+                        opacity   : 1;
+                    }
+
+                    &.active {
+                        opacity    : 1;
+                        position   : relative;
+                        display    : flex;
+                        align-items: center;
+                        color      : $menu;
+                        font-weight: 600;
+
+                        svg {
+                            stroke: $menu-active;
+                            fill  : $menu-active;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebar-option {
+            width          : calc(100% - 40px);
+            height         : 70px;
+            border-top     : 1px solid rgba($color: $menu, $alpha:.5);
+            box-sizing     : border-box;
+            margin         : 0 20px;
+            display        : flex;
+            align-items    : center;
+            justify-content: flex-end;
+            padding        : 20px 0;
+
+            .lang-selection {
+                display: flex;
+                height : 100%;
+                width  : 30px;
+
+                img {
+                    cursor: pointer;
+                    width : --webkit-fill-available;
+                }
+            }
+
+            .main-dashboard {
+                cursor: pointer;
+
+                svg {
+                    color: #fff;
+                }
+            }
+
+            .user-setting {
+                width          : fit-content;
+                background     : rgba($color: $menu, $alpha:1);
+                box-sizing     : border-box;
+                border-radius  : 25px;
+                cursor         : pointer;
+                width          : fit-content;
+                height         : 100%;
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+                padding        : 0 10px;
+
+                &::after {
+                    display: none;
+                }
+
+                span {
+                    color         : #fff;
+                    margin-right  : 5px;
+                    text-transform: capitalize;
+                    font-size     : 15px;
+                }
+
+                svg {
+                    width : 20px;
+                    height: 20px;
+                    color : #fff;
+                }
+            }
+
+            .user-setting-popup {
+                background   : #292c34;
+                border-radius: 8px;
+
+                .dropdown-item.sign-out {
+                    color: $danger;
+                }
+
+                .dropdown-divider {
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+}

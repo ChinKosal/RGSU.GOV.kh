@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@import "material-icons/iconfont/material-icons.css";
+@import "daterangepicker/daterangepicker.css";
+@import "../js/package/iCheck/square/blue.css";
+
+//tiny
+@import "./components/tinymec.scss";
+
+@import "./variable.scss";
+@import "./function.scss";
+@import "./font.scss";
+@import "./component.scss";
+@import "./content.scss";
+@import "./sidebar.scss";
+@import "./header.scss";
+@import "./table.scss";
+
+@import "./dialog.scss";
+@import "./form.scss";
+@import "./message.scss";
+@import "./file-manager.scss";
+@import "./loading.scss";
+@import "./empty.scss";
+@import "./no-permission.scss";
+@import "./auth/login.scss";
+@import "./error.scss";
+@import "./components/index.component";
+@import "./dashboard.scss";
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: $primary;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+button:disabled {
+    background: rgba(0, 0, 0, 0.12) !important;
+    color: rgba(0, 0, 0, 0.26) !important;
+    cursor: no-drop !important;
+}
+
+input:disabled,
+select:disabled,
+.select2-container--disabled {
+    background: rgba(0, 0, 0, 0.05) !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    cursor: no-drop !important;
+}
+
+.daterangepicker {
+    z-index: 999999999999 !important;
+}
+
+.drp-buttons {
+    display: flex !important;
+    justify-content: space-between;
+
+    .applyBtn {
+        background: #357ebd;
+        color: white;
+    }
+}
+
+*[readonly] {
+    cursor: default !important;
+}
+
+*:focus {
+    outline: none;
+}
+
+[x-cloak] {
+    display: none !important;
+}

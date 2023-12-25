@@ -1,0 +1,42 @@
+$primary: #396b8c;
+$secondary: #e04e4e;
+$is_active: #003399;
+$logo-color: #00ccff;
+$root: #5f5c58;
+
+$primary-color: #024de3;
+$blue-color: #024de3;
+$danger-color: #d31616;
+$dark-color: #231f20;
+$black-color: #000;
+$success: #00c753;
+$success-color: #00c753;
+$silver-color: #e5e5e5;
+$warning-color: #ffb800;
+$white: #fff;
+$slightly-dark: #7a828a;
+$info-color: #024de3;
+$navbar: #396b8c;
+$bg-menu-mobile: #5aace2;
+$hover-color: #5aace2;
+
+$price: #ff416c;
+$border: #d4d4d4;
+$border-radius: 10px;
+$padding: 20px;
+$box-shadow: rgba($primary, 0.05) 0px 6px 24px 0px,
+    rgba($primary, 0.08) 0px 0px 0px 1px;
+
+$label: #024de3;
+$bannerOverlay: rgb(0 52 55);
+
+$toast-radius: 50px;
+$toast-small-radius: 50px;
+
+.color-primary {
+    color: $primary;
+}
+
+.color-root {
+    color: $root;
+}

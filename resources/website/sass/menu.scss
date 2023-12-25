@@ -1,0 +1,35 @@
+.full-container {
+    .menu {
+        .container-menu {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    height: 60px;
+                    padding: 0px 10px;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                        background-color: white;
+                        li {
+                            color: $is_active;
+                        }
+                    }
+                    li {
+                        list-style: none;
+                        color: black;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+                .active-menu {
+                    background-color: white;
+                    li {
+                        color: $is_active;
+                    }
+                }
+            }
+        }
+    }
+}

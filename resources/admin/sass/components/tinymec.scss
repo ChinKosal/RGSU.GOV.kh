@@ -1,0 +1,27 @@
+.tox.tox-tinymce {
+    width        : 100%;
+    border-radius: 10px;
+    height       : 543px !important;
+
+    .tox-sidebar-wrap {
+        width          : 100%;
+        background     : #fff;
+        display        : flex;
+        justify-content: center;
+
+        .tox-edit-area {
+            max-width: unset !important;
+            width    : 100%;
+        }
+    }
+
+    .tox-toolbar__group {
+        border-color: #d4d4d4 !important;
+    }
+
+    button {
+        color    : inherit;
+        min-width: inherit;
+        padding  : inherit;
+    }
+}
