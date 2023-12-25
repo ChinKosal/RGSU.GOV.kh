@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="asside-content w-[35%] h-[400px] bg-green-300">
+            <div class="asside-content w-[35%] h-[400px] ">
 
             </div>
         </div>
