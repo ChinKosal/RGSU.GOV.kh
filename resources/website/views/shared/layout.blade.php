@@ -24,6 +24,8 @@
         @yield('footer')
     </div>
 
+    @include('website::components.btntop')
+
 </body>
 
 </html>

@@ -1,5 +1,22 @@
 .full-container {
     .menu {
+        &-sticky {
+            z-index: 99999;
+            position: fixed !important;
+            top: 0;
+            animation: fadeIndown 1s ease-in-out;
+            box-shadow: 14px 14px 60px 0 rgb(80 20 173 / 6%);
+        }
+        @keyframes fadeIndown {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+            100% {
+                opacity: 1;
+                transform: none;
+            }
+        }
         .container-menu {
             ul {
                 display: flex;

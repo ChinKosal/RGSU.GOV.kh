@@ -277,7 +277,7 @@
             </div>
         </div>
     </header>
-    <menu class="menu w-full h-auto​ bg-sky-100">
+    <menu class="menu w-full h-auto​ bg-yellow-500">
         <div class="container-menu w-[60%] h-full  m-auto overflow-hidden">
             <ul>
                 <a class="{{ request()->routeIs('coverpage') ? 'active-menu' : '' }}" href="{{ route('coverpage') }}">

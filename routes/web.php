@@ -33,7 +33,7 @@ Route::get('/វេទិការនិងនគរបាល', [Page10Controlle
 Route::get('/ទស្សនាវដ្តី', [Page11Controller::class, 'page11'])->name('page11');
 Route::get('/វីដេអូ', [Page12Controller::class, 'page12'])->name('page12');
 Route::get('/វិទ្យុ', [Page13Controller::class, 'page13'])->name('page13');
-Route::get('អានបន្ថែម', [ReadNewController::class, 'ReadNews'])->name('ReadNews');
+Route::get('readspeeches', [ReadNewController::class, 'speeches'])->name('speeches');
 // clear cache
 Route::get('/clear-cache', function () {
     Artisan::call('optimize:clear');

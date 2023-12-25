@@ -1,12 +1,12 @@
 <section class="container-full w-full h-auto mt-4">
     <div class="container-section w-[60%] m-auto h-auto">
-        <div class="flex w-full h-[370px] drop-shadow-md bg-white">
+        <div class="flex w-full h-[380px] drop-shadow-md bg-white">
             <div class="box-image w-[45%] h-full">
                 <a href="#"><img class="w-full h-full object-cover"
                         src="https://static.independent.co.uk/2023/08/22/09/AFP_33RE4VU.jpg" alt=""></a>
             </div>
-            <div class="box-description w-[55%] h-full px-4 py-2 overflow-hidden">
-                <p class="font-Poppins text-lg font-medium break-all">Hun Manet is a prominent Cambodian military
+            <div class="box-description w-[55%] h-auto px-4 py-2 overflow-hidden">
+                <p class="font-Poppins text-lg font-medium break-words">Hun Manet is a prominent Cambodian military
                     officer
                     and
                     politician,
@@ -38,11 +38,11 @@
         <div class="card-section w-full h-auto mt-7 grid grid-cols-3 gap-5">
             <div class="card w-full h-[350px] drop-shadow-sm bg-white">
                 <div class="box-image w-full h-[55%] ">
-                    <a href="#"> <img class="w-full h-full object-cover" src="./images/cards/card_img2.jpg"
-                            alt=""></a>
+                    <a href="{{ route('speeches') }}"> <img class="w-full h-full object-cover"
+                            src="./images/cards/card_img2.jpg" alt=""></a>
                 </div>
                 <div class="description w-full h-[45%] p-3">
-                    <a href="#"
+                    <a href="{{ route('speeches') }}"
                         class="text-base font-Poppins font-medium break-all line-clamp-4 text-black decoration-transparent hover:text-blue-800">
                         On the occasion of the
                         meeting,
@@ -64,11 +64,11 @@
             </div>
             <div class="card w-full h-[350px] drop-shadow-sm bg-white">
                 <div class="box-image w-full h-[55%] ">
-                    <a href="#"> <img class="w-full h-full object-cover" src="./images/cards/card_img3.jpg"
-                            alt=""></a>
+                    <a href="{{ route('speeches') }}"> <img class="w-full h-full object-cover"
+                            src="./images/cards/card_img3.jpg" alt=""></a>
                 </div>
                 <div class="description w-full h-[45%] p-3">
-                    <a href="#"
+                    <a href="{{ route('speeches') }}"
                         class="text-base font-Poppins font-medium break-all line-clamp-4 text-black decoration-transparent hover:text-blue-800">
                         On the occasion of the
                         meeting,
@@ -90,11 +90,11 @@
             </div>
             <div class="card w-full h-[350px] drop-shadow-sm bg-white">
                 <div class="box-image w-full h-[55%] ">
-                    <a href="#"> <img class="w-full h-full object-cover" src="./images/cards/card_img4.jpg"
-                            alt=""></a>
+                    <a href="{{ route('speeches') }}"> <img class="w-full h-full object-cover"
+                            src="./images/cards/card_img4.jpg" alt=""></a>
                 </div>
                 <div class="description w-full h-[45%] p-3">
-                    <a href="#"
+                    <a href="{{ route('speeches') }}"
                         class="text-base font-Poppins font-medium break-all line-clamp-4 text-black decoration-transparent hover:text-blue-800">
                         On the occasion of the
                         meeting,
@@ -116,11 +116,11 @@
             </div>
             <div class="card w-full h-[350px] drop-shadow-sm bg-white">
                 <div class="box-image w-full h-[55%] ">
-                    <a href="#"> <img class="w-full h-full object-cover" src="./images/cards/card_img5.jpg"
-                            alt=""></a>
+                    <a href="{{ route('speeches') }}"> <img class="w-full h-full object-cover"
+                            src="./images/cards/card_img5.jpg" alt=""></a>
                 </div>
                 <div class="description w-full h-[45%] p-3">
-                    <a href="#"
+                    <a href="{{ route('speeches') }}"
                         class="text-base font-Poppins font-medium break-all line-clamp-4 text-black decoration-transparent hover:text-blue-800">
                         On the occasion of the
                         meeting,
@@ -142,11 +142,11 @@
             </div>
             <div class="card w-full h-[350px] drop-shadow-sm bg-white">
                 <div class="box-image w-full h-[55%] ">
-                    <a href="#"> <img class="w-full h-full object-cover" src="./images/cards/card_img6.jpg"
-                            alt=""></a>
+                    <a href="{{ route('speeches') }}"> <img class="w-full h-full object-cover"
+                            src="./images/cards/card_img6.jpg" alt=""></a>
                 </div>
                 <div class="description w-full h-[45%] p-3">
-                    <a href="#"
+                    <a href="{{ route('speeches') }}"
                         class="text-base font-Poppins font-medium break-all line-clamp-4 text-black decoration-transparent hover:text-blue-800">
                         On the occasion of the
                         meeting,
@@ -168,11 +168,11 @@
             </div>
             <div class="card w-full h-[350px] drop-shadow-sm bg-white">
                 <div class="box-image w-full h-[55%] ">
-                    <a href="#"> <img class="w-full h-full object-cover" src="./images/cards/card_img3.jpg"
-                            alt=""></a>
+                    <a href="{{ route('speeches') }}"> <img class="w-full h-full object-cover"
+                            src="./images/cards/card_img3.jpg" alt=""></a>
                 </div>
                 <div class="description w-full h-[45%] p-3">
-                    <a href="#"
+                    <a href="{{ route('speeches') }}"
                         class="text-base font-Poppins font-medium break-all line-clamp-4 text-black decoration-transparent hover:text-blue-800">
                         On the occasion of the
                         meeting,
