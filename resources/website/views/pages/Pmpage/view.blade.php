@@ -5,10 +5,7 @@
 @stop
 
 @section('content')
-    @include('website::pages.Pmpage.pmpage')
-    @include('website::components.pagination')
+
 @stop
 
 @section('footer')
-    @include('website::shared.footer')
-@stop

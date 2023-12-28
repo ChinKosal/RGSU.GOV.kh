@@ -7,7 +7,6 @@
 @import "./variable.scss";
 @import "./paginate.scss";
 @import "./menu.scss";
-@import "./btntop.scss";
 
 * {
     margin: 0;
@@ -15,7 +14,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 html {
     scroll-behavior: smooth;
