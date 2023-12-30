@@ -2,7 +2,7 @@
     <div class="header w-full">
         <div class="top-header w-full h-full">
             <div class="container-sec w-full">
-                <div class="info-menu w-[60%] m-auto h-full ">
+                <div class="info-menu  m-auto h-full ">
                     <div class="top-menu w-full h-full">
                         <ul>
                             <li>
@@ -347,7 +347,7 @@
                 </div>
             </div>
             <div class="container-sec w-full h-[110px]">
-                <div class="mid-header w-[60%] h-full m-auto">
+                <div class="mid-header h-full m-auto">
                     <div class="w-full h-full flex flex-row">
                         <div class="logo-box w-[35%] h-full">
                             <div class="image-logo w-full h-full">
@@ -411,7 +411,7 @@
     </div>
     <nav class="container-fluid mt-6">
         <div class="header-nav">
-            <div class="container-sec w-[60%] m-auto">
+            <div class="container">
                 <nav class="main-nav">
                     <ul>
                         <li>
@@ -432,6 +432,10 @@
                         </li>
                         <li>
                             <a href="#">Press Release</a>
+
+                        </li>
+                        <li>
+                            <a href="#">PM</a>
 
                         </li>
                         <li><a href="#">About Us</a></li>
